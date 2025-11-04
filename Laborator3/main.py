@@ -3,18 +3,18 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # 1
-# fourier = np.zeros((8, 8), dtype = complex)
-# for m in range(8):
-#     for k in range(8):
-#         fourier[m][k] = np.exp(-2 * 1j * np.pi * m * k / 8)
-# fig, axs = plt.subplots(8)
-# for i in range(8):
-#     axs[i].plot(fourier[i].real)
-#     axs[i].plot(fourier[i].imag)
-# plt.savefig('ploturi/ex1.pdf', format = 'pdf')
-# plt.show()
-#
-# print(np.linalg.norm(np.abs(np.matmul(fourier, fourier.conj().T)) - 8 * np.identity(8)))
+fourier = np.zeros((8, 8), dtype = complex)
+for m in range(8):
+    for k in range(8):
+        fourier[m][k] = np.exp(-2 * 1j * np.pi * m * k / 8)
+fig, axs = plt.subplots(8)
+for i in range(8):
+    axs[i].plot(fourier[i].real)
+    axs[i].plot(fourier[i].imag)
+plt.savefig('ploturi/ex1.pdf', format = 'pdf')
+plt.show()
+
+print(np.linalg.norm(np.abs(np.matmul(fourier, fourier.conj().T)) - 8 * np.identity(8)))
 
 
 # 2 - 1
