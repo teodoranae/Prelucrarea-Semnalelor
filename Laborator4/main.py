@@ -1,11 +1,10 @@
-# 1
 import time
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io.wavfile as wav
 from scipy.io import wavfile
 
-#
+# 1
 def DFT(x):
     m = np.arange(len(x))
     k = m.reshape((len(x), 1))
@@ -144,5 +143,6 @@ plt.show()
 # P_noise = P_semnal / 10 ** (SNR_dB / 10)
 # P_noise = (10 ** (90 / 10)) / 10 ** (80 / 10) = (10 ** 9) / (10 ** 8) = 10
 # P_noise = 10 dB
+
 
 
